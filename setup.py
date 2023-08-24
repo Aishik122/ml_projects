@@ -12,7 +12,8 @@ def get_requirements(file_path:str)->list[str]:
         
         if '-e .' in requirements:
             requirements.remove('-e .')
-            
+    return requirements
+
 setup(
     name='ml_project',
     version='0.0.1',
